@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivMainActivity"
+            android:layout_width="240dp"
+            android:layout_height="205dp"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/photo1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvTitlu"
+            android:layout_width="306dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="84dp"
+            android:layout_marginTop="24dp"
+            android:text="ALIMENTE DIN ROMÂNIA"
+            android:textColor="@color/mov"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivMainActivity" />
+
+        <TextView
+            android:id="@+id/tvContinut"
+            android:layout_width="360dp"
+            android:layout_height="98dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Ai la îndemână informații nutriționale pentru peste 30 mii de alimente pe care le găsești în magazinele din România."
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitlu" />
+
+        <Button
+            android:id="@+id/btnCreareCont"
+            android:layout_width="253dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="128dp"
+            android:text="Creează un cont"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvContinut" />
+
+        <TextView
+            android:id="@+id/tvCont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="18dp"
+            android:text="Ai deja cont?"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnCreareCont" />
+
+        <TextView
+            android:id="@+id/tvAutentificare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="18dp"
+            android:text="Autentifică-te"
+            android:textColor="@color/mov"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/tvCont"
+            app:layout_constraintTop_toBottomOf="@+id/btnCreareCont" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
