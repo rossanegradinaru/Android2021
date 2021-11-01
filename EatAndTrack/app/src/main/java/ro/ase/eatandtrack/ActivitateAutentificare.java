@@ -50,9 +50,10 @@ public class ActivitateAutentificare extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putParcelable("OK",user);
 
-                    Intent intent = new Intent();
+                    Intent intent = new Intent(ActivitateAutentificare.this,ActivitatePrimireDate.class);
                     intent.putExtra("UserBundle",bundle);
                     setResult(RESULT_OK,intent);
+                    startActivity(intent);
                     finish();
                 }
             }
