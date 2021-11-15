@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ro.ase.eatandtrack">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EatAndTrack">
-        <activity android:name=".ActivitateMeniu"></activity>
+        <activity android:name=".ActivitateHome"></activity>
+        <activity android:name=".ActivitateSpecialisti"></activity>
+        <activity android:name=".ActivitateMeniu" />
         <activity android:name=".ActivitatePrimireDate" />
         <activity android:name=".ActivitateAutentificare" />
         <activity android:name=".ActivitateCreareCont" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

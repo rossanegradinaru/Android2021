@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">EatAndTrack</string>
+    <string name="vezi_retete">Vezi retete</string>
+    <string name="vezi_specialisti">Vezi specialisti</string>
 </resources>
