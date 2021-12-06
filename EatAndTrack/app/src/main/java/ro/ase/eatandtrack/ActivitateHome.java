@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class ActivitateHome extends AppCompatActivity {
 
-   private Button btnRetete,btnSpecialisti;
+   private Button btnRetete,btnSpecialisti, btnMasuratori;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,7 @@ public class ActivitateHome extends AppCompatActivity {
 
         btnRetete = findViewById(R.id.btnRetete);
         btnSpecialisti = findViewById(R.id.btnSpecialisti);
+        btnMasuratori = findViewById(R.id.btnMasuratori);
 
         btnRetete.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +36,17 @@ public class ActivitateHome extends AppCompatActivity {
                 finish();
             }
         });
+
+        btnMasuratori.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ActivitateHome.this,ActivitateAdaugareMasuratori.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+
     }
 
 

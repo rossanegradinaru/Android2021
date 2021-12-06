@@ -10,8 +10,8 @@
         android:id="@+id/btnRetete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="141dp"
-        android:layout_marginTop="257dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="160dp"
         android:text="@string/vezi_retete"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,9 +20,19 @@
         android:id="@+id/btnSpecialisti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="123dp"
-        android:layout_marginTop="59dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="48dp"
         android:text="@string/vezi_specialisti"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRetete" />
+
+    <Button
+        android:id="@+id/btnMasuratori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="204dp"
+        android:text="@string/masuratori"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpecialisti" />
 </androidx.constraintlayout.widget.ConstraintLayout>

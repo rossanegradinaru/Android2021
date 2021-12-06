@@ -11,8 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EatAndTrack">
-        <activity android:name=".ActivitateHome"></activity>
-        <activity android:name=".ActivitateSpecialisti"></activity>
+        <activity android:name=".ActivitateAdaugareMasuratori"></activity>
+        <activity android:name=".ActivitateHome" />
+        <activity android:name=".ActivitateSpecialisti" />
         <activity android:name=".ActivitateMeniu" />
         <activity android:name=".ActivitatePrimireDate" />
         <activity android:name=".ActivitateAutentificare" />
